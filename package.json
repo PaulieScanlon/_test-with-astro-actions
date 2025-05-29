@@ -6,9 +6,23 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "dev:mastra": "mastra dev",
+    "build:mastra": "mastra build"
   },
   "dependencies": {
-    "astro": "^5.8.0"
+    "@ai-sdk/openai": "^1.3.22",
+    "@astrojs/react": "^4.3.0",
+    "@astrojs/vercel": "^8.1.4",
+    "@mastra/core": "^0.10.1",
+    "@mastra/libsql": "^0.10.0",
+    "@mastra/loggers": "^0.10.0",
+    "@mastra/memory": "^0.10.1",
+    "@types/react": "^19.1.6",
+    "@types/react-dom": "^19.1.5",
+    "astro": "^5.8.0",
+    "mastra": "^0.10.1",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
   }
 }
