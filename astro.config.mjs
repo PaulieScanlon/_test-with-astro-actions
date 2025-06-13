@@ -6,8 +6,10 @@ import vercel from "@astrojs/vercel";
 
 export default defineConfig({
   integrations: [react()],
-  adapter: vercel({
-    includeFiles: [".mastra/output"]
-  }),
+  adapter:
+    vercel(),
+    //{
+    //  includeFiles: [".mastra/output"]
+    //  }
   output: "server"
 });
