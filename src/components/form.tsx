@@ -1,3 +1,5 @@
+"use client";
+
 import { actions } from "astro:actions";
 import { useState } from "react";
 
