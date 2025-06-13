@@ -17,6 +17,7 @@
     "@astrojs/react": "^4.3.0",
     "@astrojs/vercel": "^8.1.5",
     "@mastra/core": "^0.10.5",
+    "@mastra/deployer-vercel": "^0.10.5",
     "@mastra/libsql": "^0.10.2",
     "@mastra/loggers": "^0.10.2",
     "@mastra/memory": "^0.10.3",
