@@ -6,7 +6,6 @@ export const Form = () => {
 
   async function handleSubmit() {
     const { data } = await actions.getGreeting({ name: "Houston" });
-
     setResult(data || null);
   }
 
