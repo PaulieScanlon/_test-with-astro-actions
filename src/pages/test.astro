@@ -1,14 +1,16 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import {Form} from '../components/form'
 ---
 
 <Layout>
    <h1>Test</h1>
-   <div id="greeting"></div>
-   <button>Get greeting</button>
+   <Form client:load />
+   <!-- <div id="greeting"></div>
+   <button>Get greeting</button> -->
 </Layout>
 
-<script>
+<!-- <script>
 import { actions } from 'astro:actions';
 
 const button = document.querySelector('button');
@@ -18,8 +20,7 @@ button?.addEventListener('click', async () => {
   if (!error) {
     const output = document.getElementById('greeting')
     output!.innerHTML = `${data}`
-
   };
 })
-</script>
+</script> -->
 
