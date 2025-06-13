@@ -4,12 +4,17 @@ import { z } from "astro:schema";
 import { mastra } from "../mastra";
 
 export const server = {
-  getGreeting: defineAction({
+  getWeatherInfo: defineAction({
     input: z.object({
-      name: z.string()
+      city: z.string()
     }),
     handler: async (input) => {
-      return `Hello, ${input.name}!`;
+      const city = input.city;
+      const agent = mastra.getAgent("weatherAgent");
+
+      const result = await agent.generate(`What's the weather like in ${city}?`);
+
+      return result.text;
     }
   })
 };
